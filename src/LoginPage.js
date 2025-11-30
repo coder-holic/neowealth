@@ -49,7 +49,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-r from-[#040000] to-[#1b1a1a] overflow-hidden px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-r from-[#0000ff] to-[#ff0000] overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background blobs */}
       <div className="absolute top-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-[#e59d02] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-[#8b00ff] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>

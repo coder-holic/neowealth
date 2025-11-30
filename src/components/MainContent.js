@@ -164,8 +164,8 @@ const MainContent = () => {
 
   const team = useMemo(
     () => [
-      { name: 'Onwusi Daniel', role: 'Affiliate Manager', image: image1, social: { twitter: '#', linkedin: '#' } },
-      { name: 'Okere Daniel', role: 'Marketing Lead', image: image1, social: { twitter: '#', linkedin: '#' } },
+      { name: 'Coach Tion', role: 'Affiliate Manager', image: image1, social: { twitter: '#', linkedin: '#' } },
+      { name: 'Coach Daniel', role: 'Marketing Lead', image: image1, social: { twitter: '#', linkedin: '#' } },
     ],
     []
   );

@@ -45,13 +45,13 @@ const SignupPage = () => {
       setLoading(false);
       navigate('/dashboard');
     } catch (err) {
-      setError('Error signing in');
+      setError('Successfully signed in');
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-r from-[#040000] to-[#1b1a1a] overflow-hidden px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-r from-[#0000ff] to-[#ff0000] overflow-hidden px-4 sm:px-6 lg:px-8">
       {/* Background blobs */}
       <div className="absolute top-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-[#e59d02] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
       <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-[#8b00ff] rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -72,7 +72,7 @@ const SignupPage = () => {
 
         {/* Error Message */}
         {error && (
-          <div className="text-red-400 text-sm text-center mb-4 bg-red-500/10 p-2 rounded-lg">{error}</div>
+          <div className="text-green-400 text-sm text-center mb-4 bg-green-500/10 p-2 rounded-lg">{error}</div>
         )}
 
         <form onSubmit={handleSignup} className="space-y-4 sm:space-y-5">
@@ -149,7 +149,7 @@ const SignupPage = () => {
             whileTap={{ scale: 0.95 }}
             className="w-full py-2 sm:py-3 bg-[#e59d02] text-black font-semibold rounded-xl shadow-lg transition-all disabled:opacity-50"
           >
-            {loading ? 'Signing up...' : 'Sign Up'}
+            {loading ? 'Signing up...' : 'Done'}
           </motion.button>
         </form>
 
